@@ -197,7 +197,7 @@ public class MainActivity extends Activity implements
         
         PutDataMapRequest putDataMapReq = PutDataMapRequest.create(ARMDISARM_DATAITEM_PATH);
         putDataMapReq.getDataMap().putInt(ARMDISARM_KEY, mArmDisarmStatus);
-        PutDataRequest putDataReq = putDataMapReq.asPutDataRequest();
+        PutDataRequest putDataReq = putDataMapReq.asPutDataRequest().setUrgent();
         PendingResult<DataApi.DataItemResult> pendingResult = Wearable.DataApi.putDataItem(mGoogleApiClient, putDataReq);    	
     }
 

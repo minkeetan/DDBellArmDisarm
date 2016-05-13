@@ -9,21 +9,5 @@
     app:rectLayout="@layout/rect_activity_main"
     app:roundLayout="@layout/round_activity_main"
     tools:context="com.example.wbf486.armdisarmweapon.MainActivity"
-    tools:deviceIds="wear">
-    
-    <Button android:id="@+id/messagebutton"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:text="@string/message_button"
-		    android:layout_gravity="center"
-		    android:onClick="onMessageButtonClicked" 
-		    />
-		    
-    <Button android:id="@+id/dataitembutton"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:text="@string/dataitem_button"
-		    android:layout_gravity="center"
-		    android:onClick="onDataItemButtonClicked" 
-		    />		    
+    tools:deviceIds="wear">	    
 </android.support.wearable.view.WatchViewStub>
